@@ -53,7 +53,7 @@ def udalenie():
 		d.write(i+"\n")
 	d.close()
 
-def mnogo_zp():
+def mnogozp():
 	"""Arvutamine suurim palk
 	"""
 	palgad,inimesed=lists()
@@ -61,7 +61,7 @@ def mnogo_zp():
 	b=palgad.index(suurim) 
 	print("kõike suured palga on "+inimesed[b]+" palga")
 
-def malo_zp():
+def malozp():
 	"""arvumine kõige smal palk
 	"""
 	palgad,inimesed=lists()
@@ -70,22 +70,7 @@ def malo_zp():
 	a=palgadS[0]
 	b=palgad.index(a)
 	print("kõike väiksem palga on "+inimesed[b]+" palga ja see on "+ palgadS[0]+" euro")
-def sred():
-	"""
-	"""
-	palgad,inimesed=lists()
-	summa=0
-	for palk in palgad:
-		summa+=float(palk)
-	kesk=summa/len(palgad)
-	print("keskmine palk "+kesk)
-	vahe=0
-	if kesk in palgad:
-		kesk=inimesed[palgad.index(kesk)]
-		print(kesk)
-	else:
-		kesk="puudub"
-		print(kesk)
+
 def nalog():
 	"""
 	"""
